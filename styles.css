@@ -14,7 +14,7 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    background-image: url('space.jpg'); /* Path to your uploaded image */
+    background-image: src="space.jpg"; /* Path to your uploaded image */
     background-size: cover;
     background-position: center;
     animation: animateBackground 20s infinite alternate;
