@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="nav">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -17,28 +17,26 @@
             </ul>
         </nav>
     </header>
-    <section id="home">
-        <h1 id="typing-effect">Welcome</h1>
-        <p>Welcome to my Portfolio, my name is Abdourahim Sylla. You will learn a little bit about myself on this website</p>
+    <section id="home" class="section">
+        <h1 id="typing-effect">Welcome to My Portfolio</h1>
+        <p>Introduce yourself here.</p>
     </section>
-    <section id="projects">
-        <h2>Project</h2>
+    <section id="projects" class="section">
+        <h2>Projects</h2>
         <div class="project">
-            <h3>ArcGIS Storymap</h3>
-            <p>This project uses the GIS software ArcGIS and the storymap feature. The project done here is about Russia's relations
-            with African countries and their influence therein.</p>
-            <a href="https://storymaps.arcgis.com/stories/9bb225f0028c4f50b99da8cd2b93e6a8"> Storymap</a>
+            <h3>Project Title</h3>
+            <p>Project description.</p>
         </div>
     </section>
-    <section id="skills">
+    <section id="skills" class="section">
         <h2>Skills</h2>
-        <ul>
-            <li>Fluent in French</li>
-            <li>programming</li>
-            <li>Math</li>
-        </ul>
+        <div class="skills-container">
+            <div class="skill-box">Skill 1</div>
+            <div class="skill-box">Skill 2</div>
+            <div class="skill-box">Skill 3</div>
+        </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Contact</h2>
         <form id="contact-form">
             <label for="name">Name:</label>
@@ -50,7 +48,11 @@
             <button type="submit">Send</button>
         </form>
     </section>
-    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    <script src="script.js"></script>
+    <footer class="footer">
+        <p>© 2024 Your Name. All rights reserved.</p>
+        <a href="#home" class="back-to-top">Back to Top</a>
+    </footer>
+    <img src="toggle-dark-mode.png" alt="Toggle Dark Mode" class="dark-mode-toggle" onclick="toggleDarkMode()">
+    <script src="scripts.js"></script>
 </body>
 </html>
