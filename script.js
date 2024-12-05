@@ -1,5 +1,5 @@
 // Smooth scrolling navigation
-document.querySelectorAll('nav a').forEach(anchor => {
+document.querySelectorAll('nav a, .back-to-top').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
 
@@ -14,9 +14,6 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
     alert('Form submitted successfully!');
 });
-
-// Custom cursor animation
-document.body.style.cursor = 'url(custom-cursor.png), auto';
 
 // Dynamic theme switching
 function toggleDarkMode() {
